@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shalu Gupta – Senior Android Developer & Team Lead</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F7F4;--ink:#14222B;--muted:#53636B;--card:#fff;--line:#D6DED9;--accent:#0B7A4B;--pop:#3DDC84;--tint:#E3F4EA;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E161B;--ink:#E8EEEA;--muted:#9AAAA3;--card:#152229;--line:#25353D;--accent:#3DDC84;--tint:#173326;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E161B;--ink:#E8EEEA;--muted:#9AAAA3;--card:#152229;--line:#25353D;--accent:#3DDC84;--tint:#173326;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--pop);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);font-weight:700;margin-bottom:28px}
+p{margin:0 0 14px;max-width:68ch}
+nav{display:flex;gap:22px;flex-wrap:wrap;padding:22px 0;font-weight:500;font-size:15px}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--accent)}
+nav .name{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:18px;margin-right:auto}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding:48px 0 80px}
+.hero h1{font-size:clamp(40px,6.4vw,72px);font-weight:800;letter-spacing:-.025em}
+.hero p.lead{font-size:20px;margin:24px 0;color:var(--muted)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--pop);border-color:var(--pop);color:#0E161B}
+.phone{justify-self:center;width:260px;border:3px solid var(--ink);border-radius:36px;padding:22px 16px 26px;background:var(--card)}
+.phone .bar{width:70px;height:6px;border-radius:3px;background:var(--line);margin:0 auto 18px}
+.phone h3{font-size:15px;margin-bottom:12px;color:var(--muted);font-weight:500}
+.app{display:flex;align-items:center;gap:12px;padding:12px;border-radius:16px;background:var(--tint);margin-bottom:10px}
+.app i{flex:none;width:38px;height:38px;border-radius:10px;background:var(--pop);display:grid;place-items:center;font:800 17px "Bricolage Grotesque";font-style:normal;color:#0E161B}
+.app b{display:block;font-size:14px;line-height:1.25}
+.app span{font-size:13px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden}
+.stats div{padding:24px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats strong{display:block;font:800 36px "Bricolage Grotesque";color:var(--accent)}
+.stats span{font-size:15px;color:var(--muted)}
+.tl{border-left:3px solid var(--pop);margin-left:6px;padding-left:28px}
+.job{position:relative;margin-bottom:40px}
+.job::before{content:"";position:absolute;left:-39px;top:8px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--pop)}
+.job h3{font-size:22px;font-weight:700}
+.job .meta{color:var(--muted);font-size:15px;margin:4px 0 12px}
+ul{margin:0;padding-left:20px}
+li{margin-bottom:8px;max-width:72ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:20px;margin-bottom:6px}
+.card .meta{font-size:14px;color:var(--accent);font-weight:600;margin-bottom:10px}
+.card p{font-size:15.5px;margin:0}
+.sk h3{font-size:16px;font-weight:700;margin-bottom:6px}
+.sk p{font-size:15.5px;color:var(--muted)}
+.store{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;padding:0;list-style:none}
+.store li{margin:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:500}
+.store small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.contact a{font-size:clamp(20px,3vw,28px);font-family:"Bricolage Grotesque";font-weight:700;word-break:break-all}
+.links{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px}
+form{display:grid;gap:14px;max-width:560px;margin-top:28px}
+label{font-size:15px;font-weight:600;display:grid;gap:6px}
+input,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+textarea{min-height:130px;resize:vertical}
+form button{justify-self:start;cursor:pointer;font:600 17px "IBM Plex Sans",sans-serif}
+.alt{margin-top:28px;font-size:15px;color:var(--muted)}
+footer{padding:32px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:36px}.stats div{border-right:0;border-bottom:1px solid var(--line)}.stats div:last-child{border-bottom:0}section{padding:52px 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><span class="name">Shalu Gupta</span><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#apps">Apps</a><a href="#skills">Skills</a><a href="#content">Content</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div>
+<h1>I build Android apps that field teams, partners and shoppers rely on.</h1>
+<p class="lead">Senior Android Developer and Team Lead with 9+ years across telecom, e-commerce and healthcare. Currently leading 25+ developers at Accenture.</p>
+<div class="btns"><a class="btn main" href="#contact">Get in touch</a><a class="btn" href="#projects">See my work</a></div>
+</div>
+<div class="phone" aria-label="Selected apps published on the Play Store">
+<div class="bar"></div>
+<h3>Live on the Play Store</h3>
+<div class="app"><i>G</i><div><b>Greenlam</b><span>4.2★ · 10K+ downloads</span></div></div>
+<div class="app"><i>S</i><div><b>SendSuite Tracking Online</b><span>5.0★ · 5K+ downloads</span></div></div>
+<div class="app"><i>P</i><div><b>PitneyTrack</b><span>1K+ downloads</span></div></div>
+</div>
+</header>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<p>I design and ship production Android apps with Kotlin, Jetpack, MVVM and Coroutines. My work centres on scalable architecture, performance and code that large teams can build on together.</p>
+<p>I lead and mentor developers, work closely with cross-functional teams, and bring a strong foundation in data structures and system design to every project. I was named Best Mobile App Developer at Accenture for delivering the TechOne and FSM applications.</p>
+<div class="stats" style="margin-top:32px">
+<div><strong>9+</strong><span>years building Android apps</span></div>
+<div><strong>25+</strong><span>developers led and mentored</span></div>
+<div><strong>~90%</strong><span>fewer crashes after stability work</span></div>
+<div><strong>~70%</strong><span>higher test coverage</span></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<div class="tl">
+<div class="job"><h3>Custom Software Engineer Specialist (Team Lead)</h3><div class="meta">Accenture Solutions Pvt Ltd, Noida · Apr 2021 – Present</div>
+<ul>
+<li>Lead and mentor 25+ developers on large-scale telecom apps, including IFS, an enterprise system for high-volume field operations, improving performance with MVVM and Kotlin Coroutines.</li>
+<li>Designed modular, reusable architecture that cut development effort by about 80%.</li>
+<li>Raised unit and integration test coverage by about 70%, reducing production bugs and crashes by about 90%.</li>
+<li>Resolved critical issues with debugging and monitoring tools, lowering the crash rate by about 90%.</li>
+</ul></div>
+<div class="job"><h3>Senior Software Engineer</h3><div class="meta">Techfour Engineering Solutions Pvt Ltd, Delhi · Jan 2019 – Apr 2021</div>
+<ul>
+<li>Built and shipped production and beta Android apps in Kotlin, Java and Flutter in Agile teams.</li>
+<li>Delivered 3+ end-to-end Android projects with cross-functional teams, from requirements to post-release support.</li>
+<li>Built CI/CD pipelines on Azure DevOps that automated builds and APK deployment, cutting build and release time by about 90%.</li>
+</ul></div>
+<div class="job"><h3>Android Developer</h3><div class="meta">TBM Technology Pvt Ltd, Delhi · Nov 2015 – Jul 2018</div>
+<ul>
+<li>Built a women’s safety app with real-time alerts, GPS location tracking and nearby service access.</li>
+<li>Integrated SMS gateways such as Ozeki and designed gyroscope and accelerometer features.</li>
+<li>Added push notifications to raise engagement, and built SQL Server–backed features with Bluetooth, SMS and location services.</li>
+</ul></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>IFS FSM</h3><div class="meta">Field Service Management · 2021 – Present</div><p>Enterprise Android client that lets field technicians manage work orders, scheduling, inventory and contracts in real time. Configured dynamic UI workflows and played a key role in a stable production Go-Live.</p></div>
+<div class="card"><h3>TechOne</h3><div class="meta">Telecom service app · 2021 – Present</div><p>Gives technicians live service requests, announcements, router delivery and fault tracking, with group chat for technicians and end users. Added Single Sign-On between TechOne and FSM.</p></div>
+<div class="card"><h3>Luminous M-Partner</h3><div class="meta">Partner app · 2019 – 2021</div><p>Partner-facing app for sales registration, digital warranties and performance tracking, with real-time notifications, in-app search and multi-language support.</p></div>
+<div class="card"><h3>Send-Pro / PitneyShip</h3><div class="meta">Shipping app · 2019 – 2021</div><p>Lets users compare USPS, UPS and FedEx rates, generate shipping labels and track packages in real time.</p></div>
+</div>
+</div></section>
+
+<section id="apps"><div class="wrap">
+<h2>Apps in the store</h2>
+<ul class="store">
+<li>Greenlam<small>4.2★ · 10K+ downloads</small></li>
+<li>SendSuite Tracking Online<small>5.0★ · 5K+ downloads</small></li>
+<li>PitneyTrack<small>1K+ downloads</small></li>
+<li>Serv Insur Field Service<small>100+ downloads</small></li>
+<li>Send-Pro</li><li>Luminous Fans Home</li><li>Lead Management</li><li>M-Partner</li><li>I-Connect</li>
+</ul>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="grid sk">
+<div><h3>Languages</h3><p>Kotlin, Java, Dart (Flutter)</p></div>
+<div><h3>Android</h3><p>Android SDK, Jetpack (ViewModel, LiveData, Navigation, Room), Jetpack Compose, ViewBinding, DataBinding, Material Design, Localization</p></div>
+<div><h3>Architecture</h3><p>MVVM, MVP, MVC, Clean Architecture, SOLID, Design Patterns, Modularization, System Design (HLD/LLD), DSA</p></div>
+<div><h3>Libraries & APIs</h3><p>Retrofit, Volley, RxJava, Dagger2/Hilt, Apollo GraphQL, REST, SOAP, Glide, Picasso, Google Maps, Places and Direction APIs, FCM, WorkManager</p></div>
+<div><h3>Concurrency & storage</h3><p>Coroutines, Flow, Room, LiveData</p></div>
+<div><h3>Testing & debugging</h3><p>JUnit, Espresso, LeakCanary, Crashlytics, Android Profiler</p></div>
+<div><h3>Tools & delivery</h3><p>Git (GitHub, GitLab, Bitbucket), GitHub Actions, Bitrise, Azure DevOps, Gradle, Maven, Jira, Proguard, Agile/Scrum</p></div>
+</div>
+</div></section>
+
+<section id="content"><div class="wrap">
+<h2>Teaching & content</h2>
+<p>Alongside my engineering work, I create tech education content for developers: system design, Java and data structures and algorithms for interview preparation. I also share lifestyle vlogs and social media growth strategy.</p>
+<div class="grid" style="margin-top:24px">
+<div class="card"><h3>System design</h3><p>Explaining how large systems are designed, so developers can prepare for interviews with confidence.</p></div>
+<div class="card"><h3>Java & DSA</h3><p>Clear walkthroughs of core Java and the algorithms and data structures interviews ask about.</p></div>
+<div class="card"><h3>Creator journey</h3><p>Vlogs and practical lessons on growing a presence on social media.</p></div>
+</div>
+<div class="btns" style="margin-top:28px"><a class="btn main" href="https://www.youtube.com/@CodeWithShaluVerse">Watch on YouTube</a></div>
+</div></section>
+
+<section id="credentials"><div class="wrap">
+<h2>Education & certifications</h2>
+<div class="grid">
+<div class="card"><h3>Education</h3><p>B.Tech in Computer Science, Buddha Institute of Technology (GBTU), Gorakhpur, 2014<br>Diploma in Computer Science, Government Girls Polytechnic, Gorakhpur, 2011</p></div>
+<div class="card"><h3>Certifications</h3><p>Google Cloud Professional Engineer · Microsoft Azure · Automation DevOps · Google Data Analytics & Project Management (Coursera) · Flutter and React Native (Accenture, internal)</p></div>
+<div class="card"><h3>Languages</h3><p>English (professional), Hindi (native), Italian (conversational)</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<h2>Let’s talk</h2>
+<p>Open to conversations about Android architecture, team leadership and mobile product work.</p>
+<form id="cf">
+<label>Your name<input name="n" required autocomplete="name"></label>
+<label>Your email<input name="e" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="m" required></textarea></label>
+<button class="btn main" type="submit">Send message</button>
+</form>
+<p class="alt">Sending opens your email app with the message ready to go. You can also write directly to <a href="mailto:droiddeveloperinfo@gmail.com">droiddeveloperinfo@gmail.com</a>.</p>
+<script>
+document.getElementById('cf').addEventListener('submit',function(ev){ev.preventDefault();var f=ev.target;var s='Portfolio enquiry from '+f.n.value;var b=f.m.value+'\n\n'+f.n.value+'\n'+f.e.value;location.href='mailto:droiddeveloperinfo@gmail.com?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);});
+</script>
+<div class="links"><a href="https://www.linkedin.com/in/shalu-gupta-android/">LinkedIn</a><a href="https://github.com/Droid0011">GitHub</a><a href="https://leetcode.com/u/Shaludroid/">LeetCode</a><a href="https://www.youtube.com/@CodeWithShaluVerse">YouTube</a></div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Shalu Gupta · Noida, India</div></footer>
+</body>
+</html>
